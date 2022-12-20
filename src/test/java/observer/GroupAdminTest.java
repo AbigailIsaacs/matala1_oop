@@ -18,15 +18,15 @@ class GroupAdminTest {
         groupAdmin.register(member2);
         groupAdmin.register(member3);
         groupAdmin.register(member4);
-        assertEquals(groupAdmin.undoableStringBuilder,member1.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member2.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member3.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member4.sender);
+        assertEquals(groupAdmin.undoableStringBuilder,member1.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member2.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member3.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member4.USB_OfConcreteMember);
         assertEquals(groupAdmin.undoableStringBuilder.toString(),"start");
-        assertEquals(member1.sender.toString(),"start");
-        assertEquals(member2.sender.toString(),"start");
-        assertEquals(member3.sender.toString(),"start");
-        assertEquals(member4.sender.toString(),"start");
+        assertEquals(member1.USB_OfConcreteMember.toString(),"start");
+        assertEquals(member2.USB_OfConcreteMember.toString(),"start");
+        assertEquals(member3.USB_OfConcreteMember.toString(),"start");
+        assertEquals(member4.USB_OfConcreteMember.toString(),"start");
     }
 
     @Test
@@ -62,15 +62,15 @@ class GroupAdminTest {
         groupAdmin.register(member3);
         groupAdmin.register(member4);
         groupAdmin.insert(0,"start");
-        assertEquals(groupAdmin.undoableStringBuilder,member1.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member2.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member3.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member4.sender);
+        assertEquals(groupAdmin.undoableStringBuilder,member1.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member2.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member3.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member4.USB_OfConcreteMember);
         assertEquals(groupAdmin.undoableStringBuilder.toString(),"start");
-        assertEquals(member1.sender.toString(),"start");
-        assertEquals(member2.sender.toString(),"start");
-        assertEquals(member3.sender.toString(),"start");
-        assertEquals(member4.sender.toString(),"start");
+        assertEquals(member1.USB_OfConcreteMember.toString(),"start");
+        assertEquals(member2.USB_OfConcreteMember.toString(),"start");
+        assertEquals(member3.USB_OfConcreteMember.toString(),"start");
+        assertEquals(member4.USB_OfConcreteMember.toString(),"start");
 
     }
 
@@ -87,15 +87,15 @@ class GroupAdminTest {
         groupAdmin.register(member3);
         groupAdmin.register(member4);
         groupAdmin.append("end");
-        assertEquals(groupAdmin.undoableStringBuilder,member1.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member2.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member3.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member4.sender);
+        assertEquals(groupAdmin.undoableStringBuilder,member1.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member2.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member3.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member4.USB_OfConcreteMember);
         assertEquals(groupAdmin.undoableStringBuilder.toString(),"startend");
-        assertEquals(member1.sender.toString(),"startend");
-        assertEquals(member2.sender.toString(),"startend");
-        assertEquals(member3.sender.toString(),"startend");
-        assertEquals(member4.sender.toString(),"startend");
+        assertEquals(member1.USB_OfConcreteMember.toString(),"startend");
+        assertEquals(member2.USB_OfConcreteMember.toString(),"startend");
+        assertEquals(member3.USB_OfConcreteMember.toString(),"startend");
+        assertEquals(member4.USB_OfConcreteMember.toString(),"startend");
     }
 
     @Test
@@ -111,15 +111,15 @@ class GroupAdminTest {
         groupAdmin.register(member3);
         groupAdmin.register(member4);
         groupAdmin.delete(0,2);
-        assertEquals(groupAdmin.undoableStringBuilder,member1.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member2.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member3.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member4.sender);
+        assertEquals(groupAdmin.undoableStringBuilder,member1.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member2.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member3.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member4.USB_OfConcreteMember);
         assertEquals(groupAdmin.undoableStringBuilder.toString(),"art");
-        assertEquals(member1.sender.toString(),"art");
-        assertEquals(member2.sender.toString(),"art");
-        assertEquals(member3.sender.toString(),"art");
-        assertEquals(member4.sender.toString(),"art");
+        assertEquals(member1.USB_OfConcreteMember.toString(),"art");
+        assertEquals(member2.USB_OfConcreteMember.toString(),"art");
+        assertEquals(member3.USB_OfConcreteMember.toString(),"art");
+        assertEquals(member4.USB_OfConcreteMember.toString(),"art");
     }
 
     @Test
@@ -136,14 +136,14 @@ class GroupAdminTest {
         groupAdmin.register(member4);
         groupAdmin.delete(0,2);
         groupAdmin.undo();
-        assertEquals(groupAdmin.undoableStringBuilder,member1.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member2.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member3.sender);
-        assertEquals(groupAdmin.undoableStringBuilder,member4.sender);
+        assertEquals(groupAdmin.undoableStringBuilder,member1.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member2.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member3.USB_OfConcreteMember);
+        assertEquals(groupAdmin.undoableStringBuilder,member4.USB_OfConcreteMember);
         assertEquals(groupAdmin.undoableStringBuilder.toString(),"start");
-        assertEquals(member1.sender.toString(),"start");
-        assertEquals(member2.sender.toString(),"start");
-        assertEquals(member3.sender.toString(),"start");
-        assertEquals(member4.sender.toString(),"start");
+        assertEquals(member1.USB_OfConcreteMember.toString(),"start");
+        assertEquals(member2.USB_OfConcreteMember.toString(),"start");
+        assertEquals(member3.USB_OfConcreteMember.toString(),"start");
+        assertEquals(member4.USB_OfConcreteMember.toString(),"start");
     }
 }

@@ -19,8 +19,8 @@ class ConcreteMemberTest {
         groupAdmin.register(member4);
         groupAdmin.insert(0,"start");
         for (int i = 0; i < groupAdmin.members.size(); i++) {
-            assertEquals(groupAdmin.undoableStringBuilder, ((ConcreteMember) groupAdmin.members.get(i)).sender);
-            assertEquals(((ConcreteMember) groupAdmin.members.get(i)).sender.toString(),"start");
+            assertEquals(groupAdmin.undoableStringBuilder, ((ConcreteMember) groupAdmin.members.get(i)).USB_OfConcreteMember);
+            assertEquals(((ConcreteMember) groupAdmin.members.get(i)).USB_OfConcreteMember.toString(),"start");
         }
     }
 }
